@@ -6,8 +6,7 @@ class Movie {
     public $genre;
 
     // Dichiaro il costruttore
-    public function __construct($title, &genre, &year)
-    {
+    public function __construct($title, $genre, $year) {
         $this->title = $title;
         $this->year = $year;
         $this->genre = $genre;
@@ -25,4 +24,10 @@ class Movie {
     }
 
 }
+
+// Creo un instanza di 'Movie':
+$movie1 = new Movie("The Matrix", "Action", 1999);
+
+
+
 ?>
